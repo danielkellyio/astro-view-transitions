@@ -14,14 +14,16 @@ import Astronaut from '../components/Astronaut.vue';
 	</head>
 	<body>
 		<Header title={SITE_TITLE} />
-		<Counter client:load />
+		
 		<main>
 			<h1><Astronaut spin={true} client:idle /> Hello, Astronaut!</h1>
+			
 			<p>
 				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
 				template serves as a lightweight, minimally-styled starting point for anyone looking to
 				build a personal website, blog, or portfolio with Astro.
 			</p>
+			<Counter client:load />
 			<p>
 				This template comes with a few integrations already configured in your
 				<code>astro.config.mjs</code> file. You can customize your setup with
